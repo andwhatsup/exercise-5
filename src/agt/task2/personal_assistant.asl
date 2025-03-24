@@ -100,7 +100,7 @@
 +preference(natural_light, 1).
 +preference(vibrations, 0).
 
-/* (Optional inference rule version – not used in the following plans) */
+/* inference rule version */
 best_option(Option) :-
     preference(Option, Rank)
     & not((preference(Other, OtherRank) & not(used_method(Other)) & OtherRank < Rank)).
